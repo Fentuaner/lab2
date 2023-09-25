@@ -19,9 +19,8 @@ public class MainActivity extends AppCompatActivity {
         double answer = firstNumber + secondNumber;
         if (Double.isInfinite(answer)) {
             Toast.makeText(this, "Error: Result is not countable.", Toast.LENGTH_SHORT).show();
-        } else {
-            goToActivity("" + answer);
         }
+            goToActivity("" + answer);
     }
 
     public void subtract(View view) {
@@ -30,9 +29,8 @@ public class MainActivity extends AppCompatActivity {
         double answer = firstNumber - secondNumber;
         if (Double.isInfinite(answer)) {
             Toast.makeText(this, "Error: Result is not countable.", Toast.LENGTH_SHORT).show();
-        } else {
-            goToActivity("" + answer);
         }
+            goToActivity("" + answer);
     }
 
     public void multiply(View view) {
@@ -41,9 +39,9 @@ public class MainActivity extends AppCompatActivity {
         double answer = firstNumber * secondNumber;
         if (Double.isInfinite(answer)) {
             Toast.makeText(this, "Error: Result is not countable.", Toast.LENGTH_SHORT).show();
-        } else {
-            goToActivity("" + answer);
         }
+            goToActivity("" + answer);
+
     }
  /*   EditText editText1 = (EditText) findViewById(R.id.editTextText);
         editText1.setFilters(new InputFilter[]{filter});
@@ -62,9 +60,8 @@ public class MainActivity extends AppCompatActivity {
         double answer = firstNumber / secondNumber;
         if (Double.isInfinite(answer)) {
             Toast.makeText(this, "Error: Result is not countable.", Toast.LENGTH_SHORT).show();
-        } else {
-            goToActivity("" + answer);
         }
+            goToActivity("" + answer);
     }
 
     public void goToActivity(String str) {
